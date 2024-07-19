@@ -9,9 +9,7 @@ namespace Cumulative_1.Models
 {
     public class SchoolDbContext
     {
-        //These are readonly "secret" properties. 
-        //Only the BlogDbContext class can use them.
-        //Change these to match your own local blog database!
+
         private static string User { get { return "root"; } }
         private static string Password { get { return "root"; } }
         private static string Database { get { return "school"; } }
