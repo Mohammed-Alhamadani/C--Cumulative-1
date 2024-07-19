@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Welcome";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+                <th>Teacher ID</th>
+                <th>Name</th>
+                <th>Hire date</th>
+                <th>Salary</th>
+            </thead>
+            <tbody>
+            @foreach (var item in ViewBag.Teachers)
+            {
+            <tr>
+                <td>@item.TeacherId</td>
+                <td>@item.Name</td>
+                <td>@item.Hiredate</td>
+                <td>@item.Salary</td>
+            </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
